@@ -60,10 +60,9 @@
 		8BFA74F21C433889009B8259 /* ParseObject */ = {
 			isa = PBXGroup;
 			children = (
-				8BFA74F61C433889009B8259 /* AppDelegate.h */,
-				8BFA74F71C433889009B8259 /* AppDelegate.m */,
-				8BFA74F91C433889009B8259 /* ViewController.h */,
-				8BFA74FA1C433889009B8259 /* ViewController.m */,
+				8BFA750F1C433AC0009B8259 /* Clases */,
+				8BFA750E1C433967009B8259 /* Controllers */,
+				8BFA750D1C433959009B8259 /* Main */,
 				8BFA74FC1C433889009B8259 /* Main.storyboard */,
 				8BFA75021C43388A009B8259 /* Assets.xcassets */,
 				8BFA75041C43388A009B8259 /* LaunchScreen.storyboard */,
@@ -80,6 +79,31 @@
 				8BFA74F41C433889009B8259 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8BFA750D1C433959009B8259 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8BFA74F61C433889009B8259 /* AppDelegate.h */,
+				8BFA74F71C433889009B8259 /* AppDelegate.m */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		8BFA750E1C433967009B8259 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8BFA74F91C433889009B8259 /* ViewController.h */,
+				8BFA74FA1C433889009B8259 /* ViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		8BFA750F1C433AC0009B8259 /* Clases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Clases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,6 +137,7 @@
 				TargetAttributes = {
 					8BFA74EF1C433889009B8259 = {
 						CreatedOnToolsVersion = 7.1.1;
+						DevelopmentTeam = QXF33N93KH;
 					};
 				};
 			};
@@ -267,10 +292,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ParseObject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Benjas.ParseObject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -278,10 +306,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ParseObject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Benjas.ParseObject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
